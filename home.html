@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>coffee</title>
+<title>Coffee</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
+* {
+  box-sizing: border-box;
+}
 
+body {
   margin: 0;
 }
 
@@ -16,14 +19,62 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>커피에 대하여</h1>
+  <h1>커피</h1>
+  <p>20191133 정주연</p>
 </div>
 
+<div class="topnav">
+  <a href="#">커피의 종류</a>
+  <a href="#">만들어지는 과정</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>커피의 정의</h2>
+    <p>커피는 커피나무에 열리는 커피 열매(cherry/Berry/Drupe)의 씨 부분이다.
+      이 씨를 우리는 원두(Coffee Bean)라 부르며, 원두는 다시 생두(Green Bean)와 볶은 원두(Roasted Bean)로 구분한다.
+      다시 말해 이 두가지를 통틀어 커피 원두라 한다.</p>
+  </div>
+</div>
 
 </body>
 </html>
